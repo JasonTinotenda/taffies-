@@ -1,0 +1,157 @@
+@import url('https//fonts.googleapis.com/css2?family=Poppins:wght@200;300;400');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(images/taffies.jpg); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+#logo{
+    float: right;
+    height: 120px;
+    width: 120px;  
+    border-radius: 60%;
+}
+#rabbits-1,
+#rabbits-2,
+#rabbits-3,
+#rabbits-4,
+#rabbits-5,
+#rabbits-6{
+    float: right;
+    height:400px;
+    width:400px;
+}
+.wrapper{
+    max-width: 900px;
+    width: 100%;
+    margin: 130px auto;
+    background:white;
+    padding: 25px 30px 30px 30px;
+    border-radius: 50px;
+    position:relative;      
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.wrapper nav{
+    position: relative;
+    height: 50px;
+    width: 80%;
+    display: flex;
+     
+}
+.wrapper nav label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    line-height: 50px;
+    cursor: pointer;
+    color: #17a2b8;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+#home,
+#blog,
+#about{
+    color: #ffffff;
+}
+input[type="radio"]{
+    display: none;
+}
+.wrapper nav label i{
+    padding-right: 7px;
+}
+
+.wrapper nav .slider{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background:black;
+    border-radius: 5px;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+}
+#blog:checked ~ nav .slider{
+    left: 30%;
+}
+#about:checked ~ nav .slider{
+    left: 60%;    
+}
+section .content{
+    display: none;
+}
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#about:checked ~ section .content-3{
+    left: 20%;
+    display: block;
+}
+section .content .title{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+h3 {
+    font-size-adjust: 30px;
+}
+h4 {
+    font-size:20px
+}
+h5 {
+    font-size-adjust: 20px;
+}
+a {
+    font-size:15px;
+}
+#p1{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+hr {
+    color:black;background-color:black;height:5px;
+}
+
+ #rabbits {
+            
+    text-align: left;          
+    font-style: oblique;
+} 
+.intro{
+    text-align: left;
+}
+
+.container {
+    background-color: #17a2b8;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+                0 10px 10px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+    max-width: 100%;
+    height: 520px;
+    padding: 25px 30px 30px 30px;   
+}
+
+
